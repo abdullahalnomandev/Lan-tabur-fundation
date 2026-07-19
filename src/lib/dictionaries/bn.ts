@@ -127,6 +127,7 @@ const bn = {
   },
   coursePage: {
     enrollNow: "এখনই ভর্তি হোন",
+    detilsInfo:"বিস্তারিত",
     details: "কোর্স বিস্তারিত",
     duration: "সময়কাল",
     price: "ফি",

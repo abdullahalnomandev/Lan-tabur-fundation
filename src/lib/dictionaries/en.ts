@@ -17,7 +17,8 @@ const en: Dictionary = {
   },
   hero: {
     eyebrow: "Lan Taboor — a trade that never fails",
-    verseArabic: "إِنَّ الَّذِينَ يَتْلُونَ كِتَابَ اللَّهِ … يَرْجُونَ تِجَارَةً لَّن تَبُورَ",
+    verseArabic:
+      "إِنَّ الَّذِينَ يَتْلُونَ كِتَابَ اللَّهِ … يَرْجُونَ تِجَارَةً لَّن تَبُورَ",
     verseRef: "Surah Fatir, Ayah 29",
     name: "Lantabur Foundation",
     tagline: "Poverty to the museum, the light of Deen into every home",
@@ -53,7 +54,10 @@ const en: Dictionary = {
         curriculum: [
           {
             week: "Week 1",
-            topics: ["Introduction to the Prophet (SAW)", "From Adam (AS) to Muhammad (SAW)"],
+            topics: [
+              "Introduction to the Prophet (SAW)",
+              "From Adam (AS) to Muhammad (SAW)",
+            ],
           },
           {
             week: "Week 2",
@@ -130,6 +134,7 @@ const en: Dictionary = {
   },
   coursePage: {
     enrollNow: "Enroll Now",
+    detilsInfo: "বিস্তারিত",
     details: "Course Details",
     duration: "Duration",
     price: "Fee",
@@ -243,8 +248,7 @@ const en: Dictionary = {
     errorRequired: "Please fill in all required fields.",
     errorEmail: "Please enter a valid email address.",
     errorGeneric: "Something went wrong. Please try again.",
-    note:
-      "Note: bKash payments are currently verified manually, not through an automatic gateway. You will receive a confirmation email/SMS once your payment is verified.",
+    note: "Note: bKash payments are currently verified manually, not through an automatic gateway. You will receive a confirmation email/SMS once your payment is verified.",
   },
 };
 

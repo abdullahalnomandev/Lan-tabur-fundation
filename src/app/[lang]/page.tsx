@@ -138,7 +138,7 @@ export default async function Home({
                   href={`/${lang}/courses/${course.slug}`}
                   className="mt-6 inline-flex items-center gap-2 rounded-full bg-green-900 px-5 py-2.5 text-sm font-medium text-gold-100 transition hover:bg-green-700 group-hover:bg-gold-600 group-hover:text-green-950"
                 >
-                  {dict.coursePage.enrollNow}
+                  {dict.coursePage.detilsInfo}
                   <svg
                     className="h-4 w-4"
                     fill="none"
