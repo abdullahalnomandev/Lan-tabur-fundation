@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #1a1710;
+  --parchment: #fbf7ee;
+  --parchment-deep: #f1e9d6;
+  --green-950: #0b2a1f;
+  --green-900: #0e3a2a;
+  --green-700: #1c5c42;
+  --green-600: #266f50;
+  --gold-700: #9c701f;
+  --gold-600: #b98a34;
+  --gold-300: #e4c98a;
+  --gold-100: #f4e8c9;
+  --hairline: rgba(26, 23, 16, 0.14);
+
+  --font-body: "Hind Siliguri", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Tiro Bangla", "Cormorant Garamond", serif;
+}
+
+[data-locale="en"] {
+  --font-heading: "Cormorant Garamond", "Tiro Bangla", serif;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-parchment: var(--parchment);
+  --color-parchment-deep: var(--parchment-deep);
+  --color-green-950: var(--green-950);
+  --color-green-900: var(--green-900);
+  --color-green-700: var(--green-700);
+  --color-green-600: var(--green-600);
+  --color-gold-700: var(--gold-700);
+  --color-gold-600: var(--gold-600);
+  --color-gold-300: var(--gold-300);
+  --color-gold-100: var(--gold-100);
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+}
+
+* {
+  border-color: var(--hairline);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--parchment);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: var(--font-heading);
+}
+
+/* Illuminated corner ornament, referencing manuscript marginalia */
+.ornament-corner {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+.ledger-rule {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 43px,
+    var(--hairline) 43px,
+    var(--hairline) 44px
+  );
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    animation: reveal-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold-600);
+  outline-offset: 3px;
+}
