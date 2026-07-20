@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { Dictionary, Locale } from "@/lib/dictionaries";
 import { siteConfig } from "@/lib/config";
+import Link from "next/link";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -68,18 +69,12 @@ export default function EnrollForm({
       <div className="rounded-sm border border-[var(--hairline)] bg-[var(--parchment-deep)]/60 p-8 text-center">
         <h2 className="font-heading text-2xl text-green-950">{dict.enroll.successTitle}</h2>
         <p className="mt-3 text-[15px] leading-relaxed text-ink/75">{dict.enroll.successBody}</p>
-        <button
-          onClick={() => {
-            setName("");
-            setEmail("");
-            setPhone("");
-            setTrxId("");
-            setStatus("idle");
-          }}
+        <Link
+         href="/"
           className="mt-6 rounded-full bg-green-900 px-6 py-2.5 text-sm font-medium text-gold-100 transition hover:bg-green-700"
         >
-          {dict.enroll.anotherOne}
-        </button>
+          Home
+        </Link>
       </div>
     );
   }
