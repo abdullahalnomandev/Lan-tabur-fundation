@@ -43,4 +43,3 @@ next-env.d.ts
 # local enrollment submissions
 data/enrollments.json
 
-/serviceJson.json
